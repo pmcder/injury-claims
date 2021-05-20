@@ -1,3 +1,4 @@
+const { ObjectId } = require('bson');
 const Mongoose = require('mongoose');
 
 const Schema = Mongoose.Schema;
@@ -5,7 +6,6 @@ const Schema = Mongoose.Schema;
 let model = null;
 
 const injuryClaimSchema = new Schema({
-
     injuryType : String,
     insuranceCompany : String,
     dateOfInjury : Date,
